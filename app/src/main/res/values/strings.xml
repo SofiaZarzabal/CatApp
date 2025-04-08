@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CatApp</string>
+    <string name="cat_loading_text">Cargando michis...</string>
+    <string name="cat_error_text">¡Error!</string>
 </resources>
