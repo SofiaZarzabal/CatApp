@@ -1,5 +1,7 @@
 package com.example.domain
 
+import com.example.domain.model.CatModel
+
 interface CatRepository {
-    fun getCatInfo()
+    suspend fun getCatInfo(catsLimit: String, skip: String): Result<List<CatModel>>
 }

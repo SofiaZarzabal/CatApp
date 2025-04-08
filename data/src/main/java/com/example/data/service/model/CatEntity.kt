@@ -1,1 +1,0 @@
-package com.example.data.service.modelimport kotlinx.serialization.Serializable@Serializabledata class CatEntity()

@@ -1,1 +1,1 @@
-package com.example.data.service.apiimport retrofit2.http.GETinterface CatApi {    @GET("/api/cats")    fun getCats(): Any}
+package com.example.data.service.apiimport com.example.data.service.response.CatResponseimport retrofit2.http.GETimport retrofit2.http.Queryinterface CatApi {    @GET("/api/cats")    suspend fun getCats(        @Query(LIMIT) catsLimit: String,        @Query(SKIP) skip: String    ): List<CatResponse>    companion object {        const val LIMIT = "limit"        const val SKIP = "skip"    }}
